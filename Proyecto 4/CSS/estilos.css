@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 29, 88);
+}
+
+.relojAnalogo {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/reloj.png");
+    background-size: cover;
+    border: 1rem solid rgb(0, 153, 255);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 20px 5px rgb(11, 218, 200);
+    position: relative;
+}
+
+.relojAnalogo::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(0, 153, 255);
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.hora {
+    width: 140px;
+    height: 140px;
+}
+
+.minuto {
+    width: 220px;
+    height: 220px;
+}
+
+.segundo {
+    width: 250px;
+    height: 250px;
+}
+
+.hora::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background: beige;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.minuto::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background: rgb(0, 153, 255);
+    z-index: 11;
+    border-radius: 50%;
+}
+
+.segundo::before {
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background: rgb(0, 255, 13);
+    z-index: 11;
+    border-radius: 50%;
+}
+
+.hora,
+.minuto,
+.segundo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+.relojDigital {
+    border: 0rem solid rgb(0, 153, 255);
+    width: 110px; /* Ajusto el tamaño cuadrado */
+    height: 350px; /* Ajusto el tamaño cuadrado*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0; /* Establece el borde como cuadrado y si lo quiero rendondo 50% */
+    font-family: monospace;
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente según tus preferencias */
+    color: rgb(0, 255, 21);
+    position: absolute;
+    top: 65px; /* posición vertical,para moverlo más arriba */
+    left: 50%; /* posición horizontal  */
+    transform: translateX(-50%); /* Para centrar horizontalmente */
+}
+
+
+
+/* Estilo para los números */
+.numero {
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Ajusta la posición del numero */
+.numero-12 {
+    color: rgb(0, 153, 255);
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-1 {
+    color: rgb(0, 153, 255);
+    top: 15%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-2 {
+    color: rgb(0, 153, 255);
+    top: 31%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-3 {
+    color: rgb(0, 153, 255);
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-4 {
+    color: rgb(0, 153, 255);
+    top: 69%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-5 {
+    color: rgb(0, 153, 255);
+    top: 83%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-6 {
+    color: rgb(0, 153, 255);
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-7 {
+    color: rgb(0, 153, 255);
+    top: 83%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-8 {
+    color: rgb(0, 153, 255);
+    top: 68%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-9 {
+    color: rgb(0, 153, 255);
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.numero-10 {
+    color: rgb(0, 153, 255);
+    top: 32%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+.numero-11 {
+    color: rgb(0, 153, 255);
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
